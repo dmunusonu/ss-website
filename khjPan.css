@@ -68,8 +68,24 @@ nav .info{
     margin-left: 10px;
     transition: 1s;
 }
+.dropdown a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 1s;
+}
+.last a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 1s;
+}
 
-.menu a:last-child{
+.last a:last-child{
     background-color: orange;
     border-radius: 8px;
    
@@ -79,7 +95,17 @@ nav .info{
     background-color: orange;
     border-radius: 8px; 
 }
-
+.dropdown a:hover{
+    background-color: orange;
+    border-radius: 8px; 
+}
+.last a:hover{
+    background-color: orange;
+    border-radius: 8px; 
+}
+.dropdown.dropdown-content a{
+   display: flex;
+}
 .htext{
     position: absolute;
     font-family: sans-serif;
@@ -133,6 +159,53 @@ nav .info{
     
 }
 
+/* karmakanda section starts here */
+.mainline h1{
+    text-align: center;
+
+    background-color: chocolate;
+    color: darkgreen;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    text-decoration: solid;
+  }
+  
+  .person {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .person img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .person a {
+    margin: 10px 0 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 1s;
+  }
+  .person a :hover{
+    background-color: orange;
+    border-radius: 8px; 
+  }
+  
+
+  
+/* karmakanda section ends here */
+
 
 
 footer {
@@ -142,4 +215,42 @@ footer {
     text-align: center;
 }
 
-    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+
+  .panel {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .panel-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .panel-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .panel-option {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
