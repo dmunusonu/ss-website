@@ -1,12 +1,14 @@
-*{padding: 0; margin: 0; box-sizing: border-box; font-family: sans-serif;
+*{padding: 0; margin: 0; box-sizing: border-box;  font-family:cursive;
 }
 header {
-    font-family: sans-serif;
+ 
     width: 100%;
     min-height: 100vh;
     background-color: brown;
     background-size: cover;
+    
 }
+
 
 .info {
     color: rgb(246, 159, 29);
@@ -15,6 +17,7 @@ header {
     cursor: pointer;
     justify-content: space-between;
     display: flex;
+   
 
 }
 .form-inline{
@@ -182,7 +185,7 @@ nav .info{
   }
   
   .person img {
-    border-radius: 50%;
+    border-radius: 30%;
     width: 100%;
     height: auto;
   }
@@ -201,7 +204,31 @@ nav .info{
     background-color: orange;
     border-radius: 8px; 
   }
+  .dropdwn {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+
+  }
   
+  .dropdwn select {
+    margin-left:1rem;
+    
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #030303;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(245, 229, 229);
+  }
+ 
+  .dropdwn:hover{
+    background-color: transparent;
+      }
 
   
 /* karmakanda section ends here */
